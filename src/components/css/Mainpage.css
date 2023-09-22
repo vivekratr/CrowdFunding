@@ -1,0 +1,128 @@
+.div1 {
+  display: flex;
+  flex-direction: row;
+  padding: 0%;
+  height: 41.0625rem;
+  flex-wrap: wrap;
+}
+
+.div1a {
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.div1a img {
+  width: 23.375rem;
+  height: 41.59rem;
+}
+
+.div1b {
+  height: 41.0625rem;
+  width: 72%;
+  background-image: url("https://cdn.discordapp.com/attachments/1096324843877703713/1148892987057778698/image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+hr {
+  border-top: 1px solid var(--teal-300, #7edce2);
+}
+
+.text1 {
+  color: var(--teal-900, #014451);
+
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  height: 3rem;
+  margin: 0px;
+}
+
+.text2 {
+  color: var(--teal-900, #014451);
+
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  height: 1.5rem;
+  margin: 1rem;
+}
+.div1b button {
+  border-radius: 0.5rem;
+  border: 1px solid var(--teal-500, #0694a2);
+  background: var(--teal-400, #16bdca);
+  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  width: 11.375rem;
+  height: 2.9375rem;
+  padding: 0.8125rem 2.125rem;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+.div1b button:hover {
+  background-color: #01a8eb;
+  transform: scale(1.1);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+  transition: 0.3s ease-in-out;
+}
+
+.initHelp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.initHelp p {
+  color: var(--green-50, #f3faf7);
+
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  width: 7.125rem;
+  height: 1.3125rem;
+  flex-shrink: 0;
+  margin-top: 0rem;
+}
+
+.div2 {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: space-around;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.div2 h4 {
+  margin-left: 3rem;
+  color: var(--teal-900, #014451);
+
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 7rem;
+}
+
+.groupCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3rem;
+  justify-content: center;
+  margin-left: 7rem;
+  margin-top: 2rem;
+}

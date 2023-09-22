@@ -1,0 +1,31 @@
+.wcwe {
+ 
+
+  width: 90rem;
+  height: 14.5625rem;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* .wimg1{
+    width: 8.0625rem;
+height: 7.5625rem;
+flex-shrink: 0;
+
+} */
+
+/* .pimg1{
+    width: 8.6875rem;
+} */
+
+.ct{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
