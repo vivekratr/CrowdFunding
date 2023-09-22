@@ -6,7 +6,6 @@ import Progress_bar from "./Progress_bar";
 import Wcwe from "./Wcwe";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
-import { get } from "mongoose";
 
 
 function OpenCard() {
