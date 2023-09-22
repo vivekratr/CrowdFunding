@@ -70,14 +70,14 @@ function Profile() {
         </div>
         <div className="balance">
           <div className="cbal">
-            Current Balance
+           <p> Total Donated Balance</p>
             <div className="dbal">{personalBal}</div>
           </div>
         </div>
 
         <div className="addbal">
           <div className="eth">
-            Add ETH
+           <p> Donate ETH</p>
             <div className="ethamount">
               <input
                 onChange={handleChange}
@@ -88,14 +88,14 @@ function Profile() {
               ></input>
             </div>
             <button onClick={handleSubmit} className="addbtn">
-              Add
+              Donate
             </button>
           </div>
         </div>
 
         {manager === currentAccount && (
-          <div className="extend">
-            <p>Update Deadline (in Days)</p>
+          <div className="extend rounded border-blue-600 border-solid">
+            <p className="v ef">Update Deadline (in Days)</p>
             <input onChange={handleChangeExtend} type="Number" />
             <button onClick={handleSubmitExtend}>Submit</button>
           </div>

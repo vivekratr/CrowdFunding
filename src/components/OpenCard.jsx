@@ -115,13 +115,13 @@ function OpenCard() {
   };
 
   return (
-    <div>
+    <div className="opencard_main">
       <Header />
         {/* //error popup */}
-        <div id="error-popup" class="alert alert-error hidden">
+        <div id="error-popup" className="alert alert-error hidden">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="stroke-current shrink-0 h-6 w-6"
+          className="stroke-current shrink-0 h-6 w-6"
           fill="none"
           viewBox="0 0 24 24"
         >
@@ -139,7 +139,7 @@ function OpenCard() {
       <div id="alert-successs" className="alert alert-success hidden">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="stroke-current shrink-0 h-6 w-6"
+          className="strokeCurrent shrink-0 h-6 w-6"
           fill="none"
           viewBox="0 0 24 24"
         >
@@ -155,8 +155,8 @@ function OpenCard() {
 
 
 
-      <button
-        class="cursor-pointer duration-200 hover:scale-125 active:scale-100"
+      <button onClick={() => navigate("/")}
+        className="cursor-pointer duration-200 hover:scale-125 active:scale-100"
         title="Go Back"
       >
         <svg
@@ -164,12 +164,12 @@ function OpenCard() {
           width="50px"
           height="50px"
           viewBox="0 0 24 24"
-          class="stroke-blue-300"
+          className="stroke-blue-300"
         >
           <path
-            stroke-linejoin="round"
-            stroke-linecap="round"
-            stroke-width="1.5"
+            strokeLinejoin="round"
+            strokeLinecap="round"
+            strokeWidth="1.5"
             d="M11 6L5 12M5 12L11 18M5 12H19"
           ></path>
         </svg>
@@ -196,7 +196,7 @@ function OpenCard() {
           </div>
           {/* {personalBal>0?(data[5](currentAccount)?):(<div></div>)} */}
           <div onClick={voteNow} className="opencard_div1_card2 effect">
-            <p>Vote for Good</p>
+            <p title="Vote">Vote for Good</p>
           </div>
           
           <div className="opencard_div1_card3">
@@ -242,7 +242,7 @@ function OpenCard() {
             </div>
           </div>
           <div className="opencard_div1_card7">
-            {(currentAccount===manager)&&(<div onClick={()=>{makePayment(index,showSuccessPopup,showErrorPopup)}} className="opencard_div1_card7_1  animate-pulse  flex-wrap cursor-pointer rounded">
+            {(currentAccount===manager)&&(<div title="Pay" onClick={()=>{makePayment(index,showSuccessPopup,showErrorPopup)}} className="opencard_div1_card7_1  animate-pulse  flex-wrap cursor-pointer rounded">
               Make Payment
             </div>)}
           </div>
@@ -254,7 +254,7 @@ function OpenCard() {
         <p>Similar campaigns</p>
       </div>
 
-      <div className="opencard_div2">
+      <div title={nextData[0]} className="opencard_div2">
         <div className="opencard_div2_1"></div>
 
         <div onClick={handleClick} className="opencard_div2_2">

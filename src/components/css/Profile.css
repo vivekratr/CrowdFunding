@@ -134,6 +134,11 @@ element.style {
   height: 2.5rem;
 }
 
+.cbal p{
+  padding: 0.7rem;
+
+}
+
 .dbal {
   border-radius: 1.625rem;
   border: 1px solid var(--teal-400, #16bdca);
@@ -151,17 +156,23 @@ element.style {
   flex-shrink: 0;
 }
 
-/* div.eth {
+div.eth {
   border-radius: 1.625rem;
   border: 1px solid var(--teal-400, #16bdca);
   background: var(--teal-100, #d5f5f6);
 
   display: flex;
-  justify-content: flex-end;
+  justify-content:center;
   align-items: center;
   gap: 0.5rem;
   width: 20rem;
-  height: 2.5rem; */
+  height: 2.5rem;
+}
+
+div.eth p{
+  margin: auto;
+
+}
 
 .ethamount {
   border-radius: 1.625rem;

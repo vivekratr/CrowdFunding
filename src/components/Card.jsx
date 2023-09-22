@@ -40,7 +40,7 @@ function Card(props) {
         <div className="fund">
           <p>{props.fundReq}</p>
 
-          <div className="eth">
+          <div className="ethh">
             <img
               src="https://cdn.discordapp.com/attachments/1096324843877703713/1148948740338634792/image.png"
               alt="ETH"
