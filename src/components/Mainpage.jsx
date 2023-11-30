@@ -37,7 +37,7 @@ function Mainpage() {
           <button onClick={getManager}  className="initHelp">
             <p>Initiate Help</p>
           </button>
-          <div style={{ height: 'auto',marginLeft:'27rem',paddingLeft:'3rem' ,width: '50rem',paddingLeft:'3rem',display:'flex',flexDirection:'row',gap:'1rem'}}>
+          <div style={{ height: 'auto',marginLeft:'27rem',marginTop:'3rem',paddingLeft:'3rem' ,width: '50rem',paddingLeft:'3rem',display:'flex',flexDirection:'row',gap:'1rem'}}>
       <img width={`100%`} height={`auto`} style={{objectFit:'contain'}} src="https://cdn.discordapp.com/attachments/1096324843877703713/1179805627577532556/IC_logo_horizontal.png?ex=657b1e9d&is=6568a99d&hm=0ea4c0ba64fd133f2e4e0262bc7ebe126bd8cae35b5ce3583cd8915b3b81cf2f&" alt="" />
       </div>
         </div>
