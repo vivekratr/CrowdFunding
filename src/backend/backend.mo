@@ -10,8 +10,8 @@ public func transferSepoliaETH(to: Text, amount: Nat) : async {
     let transaction = {
         to = Shared.Address.fromString(to);
         value = amount;
-        gasLimit = 21000n; // Replace with appropriate gas limit
-        gasPrice = 10_000_000_000n; // Replace with appropriate gas price
+        gasLimit = 21000n; 
+        gasPrice = 10_000_000_000n; 
         nonce = await Shared.getNonce(senderAddress);
     };
 
@@ -20,7 +20,7 @@ public func transferSepoliaETH(to: Text, amount: Nat) : async {
     let result = await Shared.sendTransaction(signedTx);
 }
 
-// Function to check Sepolia ETH balance
+
 public func checkSepoliaETHBalance(address: Text) : async Nat {
     let targetAddress = Shared.Address.fromString(address);
 
